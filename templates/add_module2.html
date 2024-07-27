@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Module 2 Record</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            width: 80%;
+            margin: 0 auto;
+        }
+        label, select {
+            display: block;
+            margin: 15px 0;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Module 2 Record</h1>
+    <form method="POST" action="{{ url_for('add_module2') }}">
+        <label for="name">Class:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="description">Subject:</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <label for="module1_id">Module 1:</label>
+        <select id="module1_id" name="module1_id" required>
+            {% for module1_option in module1_options %}
+                <option value="{{ module1_option.id }}">{{ module1_option.name }}</option>
+            {% endfor %}
+        </select>
+
+        <button type="submit">Add Record</button>
+    </form>
+    <a href="{{ url_for('module2') }}">Back to Module 2</a>
+</body>
+</html>

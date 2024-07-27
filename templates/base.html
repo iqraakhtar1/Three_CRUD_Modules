@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <!-- Add your CSS and title here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        nav {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+        }
+        .navbar-brand {
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .navbar-nav {
+            margin-top: 20px;
+            list-style: none;
+        }
+        .nav-item {
+            margin: 10px 0;
+            text-align: center;
+        }
+        .nav-link {
+            text-decoration: none;
+            font-size: 18px;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">CRUD Application</a>
+        <br>
+        <br>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('register') }}">Register</a>
+                </li>
+                <br>
+                <br>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+                </li>
+                <br>
+                <br>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>

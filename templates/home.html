@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #dcdcdc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+
+        .card-title {
+            font-size: 20px;
+        }
+
+        .card-text {
+            font-size: 16px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Dashboard</h1>
+        <div class="row mt-4">
+            <!-- First CRUD Module -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Grandparent</h5>
+                        <p class="card-text">Perform CRUD operations on Grandparent.</p>
+                        <a href="/module1" class="btn btn-primary">Go to Grandparent</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second CRUD Module -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Parent Module</h5>
+                        <p class="card-text">Perform CRUD operations on Parent Module.</p>
+                        <a href="/module2" class="btn btn-primary">Go to Parent Module</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third CRUD Module -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Complete Data</h5>
+                        <p class="card-text">View Complete Data.</p>
+                        <a href="/complete_data" class="btn btn-primary">Go to Complete Data</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Include Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
